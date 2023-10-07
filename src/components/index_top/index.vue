@@ -3,7 +3,7 @@
     <div class="content">
       <div class="left">
         <img
-          src="../../assets/images/logo.png"
+          src="../../assets/images/logo.jpg"
           title="章声论坛"
         />
         <p>章声论坛</p>
@@ -45,12 +45,13 @@
       img {
         width: 50px;
         height: 50px;
-        margin-right: 10px;
       }
 
       p {
-        font-size: 20px;
-        color: #55a6fe;
+        margin-top: 4px;
+        font-size: 23px;
+        color: #000;
+        font-family: "华文行楷";
       }
     }
 
