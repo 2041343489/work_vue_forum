@@ -12,11 +12,19 @@ import indexBottom from "@/components/index_bottom/index.vue";
 </script>
 
 <style scoped lang="less">
-.body{
-  .content{
-    width: 80vw;
-    min-height: 500px;
-    background: #000;
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .content {
+    width: 1200px;
+    min-height: 700px;
+    margin-top: 90px;
   }
+
+  // .bottom {
+  //   width: 100%;
+  // }
 }
 </style>
