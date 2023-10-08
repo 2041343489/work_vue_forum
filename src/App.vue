@@ -1,7 +1,9 @@
 <template>
   <div class="body">
     <indexTop />
-    <div class="content">内容</div>
+    <div class="content">
+      <RouterView></RouterView>
+    </div>
     <indexBottom />
   </div>
 </template>
@@ -18,13 +20,9 @@ import indexBottom from "@/components/index_bottom/index.vue";
   align-items: center;
 
   .content {
-    width: 1200px;
+    width: 1000px;
     min-height: 700px;
-    margin-top: 90px;
+    margin-top: 60px;
   }
-
-  // .bottom {
-  //   width: 100%;
-  // }
 }
 </style>

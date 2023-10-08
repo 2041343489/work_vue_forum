@@ -2,26 +2,27 @@
   <div class="top">
     <div class="content">
       <div class="left">
-        <img
-          src="../../assets/images/logo.jpg"
-          title="章声论坛"
-        />
+        <img src="../../assets/images/logo.jpg" title="章声论坛" />
         <p>章声论坛</p>
       </div>
+      <div class="center">
+        <Search />
+      </div>
       <div class="right">
-        <span class="help">帮助中心</span>
         <span class="login">登录/注册</span>
       </div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Search from "@/views/search/index.vue";
+</script>
 
 <style scoped lang="less">
 .top {
   width: 100%;
-  height: 70px;
+  height: 50px;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -33,13 +34,13 @@
     height: 100%;
     background: #fff;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #eee;
 
     .left {
       cursor: pointer;
       display: flex;
-      justify-content: center;
       align-items: center;
 
       img {
@@ -56,19 +57,10 @@
     }
 
     .right {
+      margin-right: 20px;
       display: flex;
-      justify-content: center;
-      align-items: center;
       font-size: 14px;
       color: #666;
-
-      .help {
-        margin-right: 10px;
-      }
-      .help:hover {
-        color: #55a6fe;
-        cursor: pointer;
-      }
       .login:hover {
         color: #55a6fe;
         cursor: pointer;
