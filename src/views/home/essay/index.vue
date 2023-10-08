@@ -6,7 +6,7 @@
       class="infinite-list-item"
       @click="logNumber(i)"
     >
-      {{ i }}
+      {{ i + 1 }}
     </li>
   </ul>
 </template>
