@@ -18,7 +18,7 @@ const load = () => {
   count.value += 2;
 };
 
-const logNumber = (item) => {
+const logNumber = (item:number) => {
   console.log(item);
 };
 </script>
@@ -29,6 +29,7 @@ const logNumber = (item) => {
   padding: 0;
   margin: 0;
   list-style: none;
+  background: #fff;
 }
 
 .infinite-list::-webkit-scrollbar {
@@ -38,7 +39,6 @@ const logNumber = (item) => {
 //   background: #ccc; // 滑块颜色
 //   border-radius: 5px; // 滑块圆角
 // }
-
 // .infinite-list::-webkit-scrollbar-thumb:hover {
 //   background: #ddd; // 鼠标移入滑块变色
 // }

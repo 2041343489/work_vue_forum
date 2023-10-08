@@ -9,7 +9,7 @@
         <Search />
       </div>
       <div class="right">
-        <span class="login">登录/注册</span>
+        <span class="login" @click="loginClick">登录/注册</span>
       </div>
     </div>
   </div>
@@ -17,6 +17,13 @@
 
 <script setup lang="ts">
 import Search from "@/views/search/index.vue";
+import { useCounterStore } from "@/stores/counter";
+
+const useStore = useCounterStore();
+
+const loginClick = () => {
+  useStore.isShowLogin = true;
+};
 </script>
 
 <style scoped lang="less">
@@ -28,16 +35,15 @@ import Search from "@/views/search/index.vue";
   position: fixed;
   z-index: 99;
   top: 0px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
 
   .content {
-    width: 1200px;
+    width: 90vw;
     height: 100%;
-    background: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #eee;
-
     .left {
       cursor: pointer;
       display: flex;
@@ -55,7 +61,6 @@ import Search from "@/views/search/index.vue";
         font-family: "华文行楷";
       }
     }
-
     .right {
       margin-right: 20px;
       display: flex;

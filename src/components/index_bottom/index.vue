@@ -18,7 +18,7 @@
 .bottom {
   width: 100%;
   height: 50px;
-  background: #f0f2f5;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
