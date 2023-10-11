@@ -20,7 +20,7 @@ import Login from "@/components/login/index.vue";
 <style scoped lang="less">
 .body {
   .center {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
