@@ -1,6 +1,6 @@
 <template>
     <div class="creationBody">
-        创作者中心.
+        创作者中心
     </div>
 </template>
 
