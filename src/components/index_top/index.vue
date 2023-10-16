@@ -1,7 +1,7 @@
 <template>
   <div class="top">
     <div class="content">
-      <div class="left">
+      <div class="left" @click="toIndex">
         <img src="../../assets/images/logo.jpg" title="章声论坛" />
         <p>章声论坛</p>
       </div>
@@ -18,11 +18,17 @@
 <script setup lang="ts">
 import Search from "@/views/search/index.vue";
 import { useCounterStore } from "@/stores/counter";
+import { useRouter } from "vue-router";
 
 const useStore = useCounterStore();
+const router = useRouter();
 
 const loginClick = () => {
   useStore.isShowLogin = true;
+};
+
+const toIndex = () => {
+  router.push("/");
 };
 </script>
 

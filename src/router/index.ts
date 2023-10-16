@@ -11,6 +11,10 @@ const router = createRouter({
       path: "/index",
       component: () => import('@/views/home/index.vue')
     },
+    {
+      path: "/write",
+      component: () => import('@/views/writeArticle/index.vue')
+    },
   ],
 });
 
